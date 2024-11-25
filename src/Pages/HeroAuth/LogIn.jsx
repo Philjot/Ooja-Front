@@ -22,7 +22,7 @@ function LogIn() {
     e.preventDefault();
     try{
       setLoading(true);
-      const res = await axios.post('http://localhost:4500/api/v1/auth/login', {email, password});
+      const res = await axios.post(`${import.meta.env.VITE_API_URL}/api/v1/auth/login`, {email, password});
       console.log(res.data)
 
       toast.success("Login successful 😁")

@@ -25,7 +25,7 @@ function Register() {
   const handleSubmit = async (e)=>{
     e.preventDefault()
     try{
-      const res = await axios.post('http://localhost:4500/api/v1/auth/signUp', formData)
+      const res = await axios.post(`${import.meta.env.VITE_API_URL}/api/v1/auth/signUp`, formData)
       localStorage.setItem("user", JSON.stringify(res.data))
       toast.success("Registration Successful 🤗")
       dispatch({type:"LOGIN", payload:res.data})

@@ -67,7 +67,7 @@ function Navigation() {
 
 
         {open && (<nav aria-label="Global" className="w-screen fixed py-5 left-0 top-20 bg-black/20 z-30 md:hidden transition-all duration-200 ease-linear backdrop-blur-sm ">
-          <ul className="flex items-center gap-6 text-sm">
+          <ul className="flex flex-col items-center gap-6 text-sm">
             <li>
               <NavLink className="text-gray-500 transition hover:text-gray-500/75" to="/"> Home </NavLink>
             </li>
