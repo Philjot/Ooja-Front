@@ -21,7 +21,7 @@ function Register() {
     const[formData, setFormData] = useState(initialState)
     const history = useNavigate()
     const {dispatch} = useContext(AppContext)
-    const [loading, setLoading] = useState()
+    const [loading, setLoading] = useState(false)
 
   const handleSubmit = async (e)=>{
     e.preventDefault()
@@ -34,7 +34,7 @@ function Register() {
     } catch (error){
       toast.error(error.response.data.message || error.response.data. error || "An error occured")
      }finally{
-      setLoading()
+      setLoading(false)
      }
     
   }
