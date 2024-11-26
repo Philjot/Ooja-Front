@@ -26,6 +26,7 @@ function Register() {
   const handleSubmit = async (e)=>{
     e.preventDefault()
     try{
+      setLoading(true)
       const res = await axios.post(`${import.meta.env.VITE_API_URL}/api/v1/auth/signUp`, formData)
       localStorage.setItem("user", JSON.stringify(res.data))
       toast.success("Registration Successful 🤗")
