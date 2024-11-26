@@ -165,7 +165,7 @@ function Register() {
               By creating an account, you agree to our
               <a href="#" className="text-gray-700 underline"> terms and conditions </a>
               and
-              <a href="#" className="text-gray-700 underline">privacy policy</a>.
+              <a href="#" className="text-gray-600 underline">privacy policy</a>.
             </p>
           </div>
 
